@@ -9,9 +9,9 @@ import java.util.Map;
 /**
  * sku销售属性&值
  *
- * @author lmj
- * @email lmj@gmail.com
- * @date 2021-05-24 10:45:49
+ * @author leifengyang
+ * @email leifengyang@gmail.com
+ * @date 2019-10-01 21:08:49
  */
 public interface SkuSaleAttrValueService extends IService<SkuSaleAttrValueEntity> {
 

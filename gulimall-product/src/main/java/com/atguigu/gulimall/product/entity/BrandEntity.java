@@ -16,7 +16,7 @@ import javax.validation.constraints.*;
 
 /**
  * 品牌
- *
+ * 
  * @author leifengyang
  * @email leifengyang@gmail.com
  * @date 2019-10-01 21:08:49
@@ -53,7 +53,7 @@ public class BrandEntity implements Serializable {
 	 */
 //	@Pattern()
 	@NotNull(groups = {AddGroup.class, UpdateStatusGroup.class})
-	@ListValue(vals={0,1},groups = {AddGroup.class, UpdateStatusGroup.class})
+  	@ListValue(vals={0,1},groups = {AddGroup.class, UpdateStatusGroup.class})
 	private Integer showStatus;
 	/**
 	 * 检索首字母

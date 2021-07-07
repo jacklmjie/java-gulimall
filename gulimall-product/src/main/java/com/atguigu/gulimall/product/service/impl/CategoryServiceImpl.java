@@ -50,7 +50,7 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
 
         //2.1）、找到所有的一级分类
         List<CategoryEntity> level1Menus = entities.stream().filter(categoryEntity ->
-                categoryEntity.getParentCid() == 0
+             categoryEntity.getParentCid() == 0
         ).map((menu)->{
             menu.setChildren(getChildrens(menu,entities));
             return menu;
@@ -92,7 +92,7 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
     @Override
     public void updateCascade(CategoryEntity category) {
         this.updateById(category);
-        //categoryBrandRelationService.updateCategory(category.getCatId(),category.getName());
+        categoryBrandRelationService.updateCategory(category.getCatId(),category.getName());
     }
 
     //225,25,2
@@ -124,4 +124,7 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
 
         return children;
     }
+
+
+
 }

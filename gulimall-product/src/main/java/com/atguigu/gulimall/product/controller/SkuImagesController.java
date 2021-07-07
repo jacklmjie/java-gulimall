@@ -20,9 +20,9 @@ import com.atguigu.common.utils.R;
 /**
  * sku图片
  *
- * @author lmj
- * @email lmj@gmail.com
- * @date 2021-05-24 10:45:49
+ * @author leifengyang
+ * @email leifengyang@gmail.com
+ * @date 2019-10-01 22:50:32
  */
 @RestController
 @RequestMapping("product/skuimages")

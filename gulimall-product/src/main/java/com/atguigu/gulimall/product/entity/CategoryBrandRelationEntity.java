@@ -10,9 +10,9 @@ import lombok.Data;
 /**
  * 品牌分类关联
  * 
- * @author lmj
- * @email lmj@gmail.com
- * @date 2021-05-24 10:45:49
+ * @author leifengyang
+ * @email leifengyang@gmail.com
+ * @date 2019-11-17 21:25:25
  */
 @Data
 @TableName("pms_category_brand_relation")

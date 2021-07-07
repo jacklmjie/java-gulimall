@@ -50,7 +50,7 @@ public class CategoryController {
     @RequestMapping("/info/{catId}")
     //@RequiresPermissions("product:category:info")
     public R info(@PathVariable("catId") Long catId){
-        CategoryEntity category = categoryService.getById(catId);
+		CategoryEntity category = categoryService.getById(catId);
 
         return R.ok().put("data", category);
     }
@@ -61,7 +61,7 @@ public class CategoryController {
     @RequestMapping("/save")
     //@RequiresPermissions("product:category:save")
     public R save(@RequestBody CategoryEntity category){
-        categoryService.save(category);
+		categoryService.save(category);
 
         return R.ok();
     }
@@ -79,7 +79,7 @@ public class CategoryController {
     @RequestMapping("/update")
     //@RequiresPermissions("product:category:update")
     public R update(@RequestBody CategoryEntity category){
-        categoryService.updateCascade(category);
+		categoryService.updateCascade(category);
         return R.ok();
     }
 
@@ -94,7 +94,7 @@ public class CategoryController {
     public R delete(@RequestBody Long[] catIds){
 
 
-        //categoryService.removeByIds(Arrays.asList(catIds));
+		//categoryService.removeByIds(Arrays.asList(catIds));
 
         categoryService.removeMenuByIds(Arrays.asList(catIds));
 
